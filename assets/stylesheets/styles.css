@@ -1,0 +1,92 @@
+/*this is a css file */
+:root {
+	--bg-image:url('/assets/images/utrechtnight2gray.png');
+	--bg-color: #2e3d47;
+	--border-color: gray;
+	--font-color:gray;
+	--font-family: 'monospace';
+	--link-color: #68aabf; 
+	--button-bg-color: #777eaf;
+	--font-size: 1.4vw;
+	--min-font-size: 14px;
+}
+body {
+	background-image:var(--bg-image);
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center top;
+	color: white;
+	font-family: var(--font-family);
+}
+
+a {
+	color: var(--link-color);
+	font-weight: bold;
+}  
+
+ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;	
+}
+
+div {
+	display: block;
+}
+
+section {
+	background-color: var(--bg-color);
+	padding: 10px;
+	border: 1px solid var(--border-color);
+	border-radius: 3px;
+	margin: 5px;
+}
+
+#container {
+	max-width: 900px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.title-header {
+	position: relative;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	font-size: clamp(20px, 5vw, 60px);
+}
+
+.navbox {
+	text-align: center;
+}
+
+.row1 {
+	max-width: 60%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.mypicture {
+	text-align: center;
+}
+
+.mypicture img {
+	margin: auto;
+	max-height: 400px;
+	width: auto;
+}
+
+
+.content {
+	flex: 1;
+}
+
+.flex {
+	display: flex;
+}
+
+
