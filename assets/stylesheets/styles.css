@@ -28,10 +28,22 @@ section h2 {
 	text-underline-offset: 5px;
 }
 
+section h1 {
+	margin: 5px;
+	text-decoration-line: underline;
+	text-decoration-style: dashed;
+	text-underline-offset: 5px;
+}
 a {
 	color: var(--link-color);
 	font-weight: bold;
+	margin: 5px;
 }  
+
+a img {
+	max-height: 4em;
+	max-width: 4em;
+}
 
 div {
 	display: block;
@@ -45,6 +57,7 @@ section {
 	font-size: var(--font-size);
 	margin-bottom: 5px;
 	margin-right: 5px;
+	flex-grow: 1;
 }
 
 section:not(:first-child) {
@@ -97,6 +110,19 @@ section:not(:first-child) {
 	width: auto;
 }
 
+.contact-icons {
+	display: flex;
+	align-items: center;
+	list-style: none;	
+}
+
+.contact-icons li {
+	display: inline;
+	}
+
+.contact-icons a {
+	font-size: 1.3em;
+	}
 
 .content {
 	flex: 1;
@@ -109,3 +135,12 @@ section:not(:first-child) {
 .services-header {
 	font-style: italic;
 	text-align: center;
+}
+
+.services-list li {
+	margin-bottom: 7px;	
+      }
+
+.services-list b {
+	color: #4fc1ef;	
+      }
